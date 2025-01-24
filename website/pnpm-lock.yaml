@@ -12,8 +12,8 @@ importers:
         specifier: ^0.28.0
         version: 0.28.6(astro@4.16.18(rollup@4.30.1)(typescript@5.7.3))
       '@expressive-code/plugin-collapsible-sections':
-        specifier: ^0.40.0
-        version: 0.40.0
+        specifier: ^0.40.1
+        version: 0.40.1
       '@expressive-code/plugin-line-numbers':
         specifier: ^0.37.0
         version: 0.37.1
@@ -308,11 +308,11 @@ packages:
   '@expressive-code/core@0.37.1':
     resolution: {integrity: sha512-nYgsK3uxK4W46v0IolHdB5+T6MQfy5weTpyB3kbzr11ur2UKUy2oHGhbWa+hRThfYEF1PM+TFxMtWU7amcjF8A==}
 
-  '@expressive-code/core@0.40.0':
-    resolution: {integrity: sha512-vKRxKaDVhSozGPETcPOB7NF8sn1ICZoO/UfUWs/4o+XmDIOSX7cBQX8BVukenvSksdv5Aaf/teuGzjxX0a7Ibw==}
+  '@expressive-code/core@0.40.1':
+    resolution: {integrity: sha512-j71gxBepyzBgOtZomxzl8M90AjILf6hZarWFePDis7sTjqCwxWrtZEtTCafto8IOURG/ECZN0g7Ys4zExkNU7Q==}
 
-  '@expressive-code/plugin-collapsible-sections@0.40.0':
-    resolution: {integrity: sha512-OktWRqYOC4g92wCK1dClYX1UGvO4WAkAv0gUd+kAuZH/lAaesl+TC0NWoLRY+fEqMx3co4YfKmboCmjXWmBwBw==}
+  '@expressive-code/plugin-collapsible-sections@0.40.1':
+    resolution: {integrity: sha512-lXVH1f+NPmckMoV8b4dSOfHA90ckgys0bDKdXIgcjqxTsbcdb+wrNYqdepnWCuX1HGDSlac7haJd0qtj0OrvaA==}
 
   '@expressive-code/plugin-frames@0.35.6':
     resolution: {integrity: sha512-CqjSWjDJ3wabMJZfL9ZAzH5UAGKg7KWsf1TBzr4xvUbZvWoBtLA/TboBML0U1Ls8h/4TRCIvR4VEb8dv5+QG3w==}
@@ -1530,6 +1530,10 @@ packages:
     resolution: {integrity: sha512-OCVPnIObs4N29kxTjzLfUryOkvZEq+pf8jTF0lg8E7uETuWHA+v7j3c/xJmiqpX450191LlmZfUKkXxkTry7nA==}
     engines: {node: ^10 || ^12 || >=14}
 
+  postcss@8.5.1:
+    resolution: {integrity: sha512-6oz2beyjc5VMn/KV1pPw8fliQkhBXrVn1Z3TVyqZxU8kZpzEKhBdmCFqI6ZbmGtamQvQGuU1sgPTk8ZrXDD7jQ==}
+    engines: {node: ^10 || ^12 || >=14}
+
   preferred-pm@4.0.0:
     resolution: {integrity: sha512-gYBeFTZLu055D8Vv3cSPox/0iTPtkzxpLroSYYA7WXgRi31WCJ51Uyl8ZiPeUUjyvs2MBzK+S8v9JVUgHU/Sqw==}
     engines: {node: '>=18.12'}
@@ -2219,8 +2223,8 @@ snapshots:
       hast-util-to-html: 9.0.4
       hast-util-to-text: 4.0.2
       hastscript: 9.0.0
-      postcss: 8.4.49
-      postcss-nested: 6.2.0(postcss@8.4.49)
+      postcss: 8.5.1
+      postcss-nested: 6.2.0(postcss@8.5.1)
       unist-util-visit: 5.0.0
       unist-util-visit-parents: 6.0.1
 
@@ -2236,21 +2240,21 @@ snapshots:
       unist-util-visit: 5.0.0
       unist-util-visit-parents: 6.0.1
 
-  '@expressive-code/core@0.40.0':
+  '@expressive-code/core@0.40.1':
     dependencies:
       '@ctrl/tinycolor': 4.1.0
       hast-util-select: 6.0.3
       hast-util-to-html: 9.0.4
       hast-util-to-text: 4.0.2
       hastscript: 9.0.0
-      postcss: 8.4.49
-      postcss-nested: 6.2.0(postcss@8.4.49)
+      postcss: 8.5.1
+      postcss-nested: 6.2.0(postcss@8.5.1)
       unist-util-visit: 5.0.0
       unist-util-visit-parents: 6.0.1
 
-  '@expressive-code/plugin-collapsible-sections@0.40.0':
+  '@expressive-code/plugin-collapsible-sections@0.40.1':
     dependencies:
-      '@expressive-code/core': 0.40.0
+      '@expressive-code/core': 0.40.1
 
   '@expressive-code/plugin-frames@0.35.6':
     dependencies:
@@ -3876,12 +3880,23 @@ snapshots:
       postcss: 8.4.49
       postcss-selector-parser: 6.1.2
 
+  postcss-nested@6.2.0(postcss@8.5.1):
+    dependencies:
+      postcss: 8.5.1
+      postcss-selector-parser: 6.1.2
+
   postcss-selector-parser@6.1.2:
     dependencies:
       cssesc: 3.0.0
       util-deprecate: 1.0.2
 
   postcss@8.4.49:
+    dependencies:
+      nanoid: 3.3.8
+      picocolors: 1.1.1
+      source-map-js: 1.2.1
+
+  postcss@8.5.1:
     dependencies:
       nanoid: 3.3.8
       picocolors: 1.1.1
